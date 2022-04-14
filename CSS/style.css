@@ -1,0 +1,30 @@
+* {
+  font-family: 'Roboto Slab', serif;
+}
+.navbar {
+  background-color: #f4b41a;
+  border-radius: 10px;
+}
+.navbar ul {
+  overflow: auto;
+  letter-spacing: 1px;
+}
+.navbar li {
+  float: left;
+  list-style-type: none;
+  padding: 4px 4px;
+  margin: 10px 6px;
+}
+.navbar li a {
+  padding: 4px 4px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #143d59;
+  font-family: 'Dosis', sans-serif;
+  font-size: 19px;
+}
+/* .search{
+  color: #143d59;
+  float: right;
+  padding: 14px 49px;
+} */
