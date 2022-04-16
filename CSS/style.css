@@ -28,3 +28,15 @@
   float: right;
   padding: 14px 49px;
 } */
+.btn{
+  background-color: rgb(117, 255, 117);
+  padding: 2px 2px;
+}
+.btn a{
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
