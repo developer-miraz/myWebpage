@@ -28,15 +28,26 @@
   float: right;
   padding: 14px 49px;
 } */
-.btn{
-  background-color: rgb(117, 255, 117);
-  padding: 2px 2px;
+.btn {
+  background-color: rgb(255, 94, 94);
+  padding: 5px 5px;
+  border-radius: 10px;
+  margin: auto;
+  border: 2px solid rgb(255, 94, 94);
 }
-.btn a{
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid rgb(255, 94, 94);
+
+}
+.btn a:hover {
+  color: rgb(255, 94, 94);
+}
+.btn a {
   letter-spacing: 2px;
   text-decoration: none;
+  text-transform: uppercase;
   color: rgb(255, 255, 255);
-  font-family: 'Dosis', sans-serif;
   font-size: 20px;
   letter-spacing: 1px;
 }
