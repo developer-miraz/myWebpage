@@ -34,10 +34,12 @@
   border-radius: 10px;
   margin: auto;
   border: 2px solid rgb(255, 94, 94);
+  transition: all 0.3s;
 }
 .btn:hover {
   background-color: transparent;
   border: 2px solid rgb(255, 94, 94);
+  cursor: pointer;
 
 }
 .btn a:hover {
