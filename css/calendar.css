@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Lato:wght@700&family=Montserrat&family=Nunito+Sans:wght@600&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Lato:wght@700&family=Montserrat&family=Nunito+Sans:wght@700&family=Quicksand:wght@500&display=swap');
 * {
   margin: 0;
 }
@@ -11,86 +11,127 @@
   align-items: center;
 }
 .calendar {
-  height: 530px;
+  min-height: 600px;
   width: 800px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0 10px 0.5px rgb(114, 114, 114);
 }
-.header {
+.main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* margin-top: 40px;
-  /* margin-left: 30px; */ Removed for SEO ranking */
+}
+.monthYear {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 18px;
 }
 .year {
   font-size: 27px;
   color: rgb(200, 200, 200);
   font-family: 'Montserrat', sans-serif;
-  display: inline-block;
-  padding: 0px;
-  margin-bottom: -17px;
-  margin-top: 20px;
-  margin-left: 28px;
-  flex-direction: column;
-  /* background-color: #131516; */
 }
 .month {
-  font-size: 34px;
   color: rgb(255, 72, 72);
   text-transform: uppercase;
   font-family: 'Assistant', sans-serif;
   font-weight: 900;
   letter-spacing: -1px;
-  display: inline-block;
-  padding: 0;
-  margin-left: 24px;
-  flex-direction: column;
+  margin-top: -14px;
+  margin-left: -5px;
+  font-size: 50px;
 }
-.week{
-  display: flex; 
-  font-family: 'Lato', sans-serif; 
-  justify-content: space-between; 
+.week {
+  display: flex;
+  font-family: 'Lato', sans-serif;
+  justify-content: space-between;
   margin: 25px;
-  margin-left: 43px; 
-  margin-right: 50px; 
-  margin-top: 13px; 
-  letter-spacing: 0.5px; 
+  margin-left: 43px;
+  margin-right: 49px;
+  margin-top: 13px;
+  letter-spacing: 0.5px;
   font-weight: bold;
-
 }
-.week li{
-  display: flex; 
-  width: 95px; 
-  justify-content: center; 
-  list-style-type: none; 
-  border-radius: 20px; 
-  place-items: center; 
-  padding: 7px 0px; 
-  font-size: 13.3px; 
+.week li {
+  display: flex;
+  width: 97px;
+  justify-content: center;
+  list-style-type: none;
+  border-radius: 20px;
+  place-items: center;
+  padding: 7px 0px;
+  font-size: 14.3px;
   color: white;
-  margin-right: 1;
+  margin-right: 1px;
 }
-.weekdays{
+.weekdays {
   background-color: gray;
 }
 .weekends{
   background-color: rgb(255, 72, 72);
 }
-.days{
-  display: flex; 
-  flex-wrap: wrap; 
+.offDays{
+  color: red;
+}
+.days {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 43px;
 }
-.days div{
-  width: 90px; 
+.days div {
+  width: 80px;
+  height: 53.5px;
   display: flex;
   justify-content: end;
-  border: 2px solid rgb(224, 224, 224); 
-  border-radius: 8px; 
-  padding: 15px 0px; 
-  margin-bottom: 8px; 
+  align-items: end;
+  border: 2px solid rgb(224, 224, 224);
+  border-radius: 8px;
+  margin-bottom: 8px;
   margin-right: 8px;
+  transition: all 0.35s;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 13px;
+  font-size: 16px;
+  padding: 4px 5px;
+}
+.today{
+  background-color: rgb(71, 82, 180);
+  box-shadow: 0 0 0 0px rgb(224, 224, 224),
+              0 0 0 3px rgb(71, 82, 180);
+  color: white;
+}
+.days div:hover {
+  background-color: #f1f1ee;
+}
+.prevMonthDate,
+.nextMonthDate {
+  color: #afafaf;
+}
+.prev{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-right: 20px;
+  border-radius: 25px;
+  font-size: 20px;
+}
+.prev:hover,
+.next:hover {
+  background-color: #afafaf;
+  cursor: pointer;
+}
+.next {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-left: 20px;
+  border-radius: 25px;
+  font-size: 20px;
+  transition: all 0.34s;
 }
